@@ -1,0 +1,86 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<link href='https://fonts.googleapis.com/css?family=Kanit:400,200,200italic,300,300italic,500&subset=latin,thai,latin-ext' rel='stylesheet' type='text/css'>
+<link href='/css/main.css' rel='stylesheet' type='text/css'>
+<link href='/css/animation.css' rel='stylesheet' type='text/css'>
+<script src="/js/jquery-3.0.0.min.js"></script>
+</head>
+  <body>
+  <div class="page-wrapper" style="width:100%;">
+  
+	  <div id="header-wrapper"></div>
+	  <div class="clear"></div>
+	  <span class="pagenav" style="display:inline-block; float:right; margin-top: -2.5em; font-weight: 200; font-style: italic; padding-right:2em; clear:both;">Now you are here : Home</span>
+
+  </div>
+  
+  
+  <style>
+	#Sec3Home {background-image:url('/images/welcome-bg.jpg'); position: absolute; left:0;}
+	#Sec3Home div span {display:inline-block; width:25%; height:45%; background-color:#000; color:#fff; margin:0.5em;}
+	#Sec1Home {background-image:url('/images/welcome-bg.jpg'); position: absolute; right:0; color:#fff;}
+	.dark-layer {background-color:rgba(0,0,0,0.5); width:100%; height:100%; top:0; display:none;}
+  </style>
+  
+  
+  <div style="background-color:#000; position:relative; height:50vh; background-image: url('/images/bottom-corner.png'),url('/images/top-corner.png'); background-repeat: no-repeat; background-position: bottom left, top right;">
+  
+	<span id="Sec3Home" class="home-items">
+		<div id="darklayerSec3" class="dark-layer"></div>
+		<div id="Sec3wrapper" style="margin-top:-40%; text-align:center; display:none; z-index:2;">
+			<a><span>Item 1</span></a>
+			<a><span>Item 2</span></a>
+			<a><span>Item 3</span></a>
+		</div>
+	</span>
+	<span id="Sec1Home" class="home-items">
+		<div id="darklayerSec1" class="dark-layer"></div>
+		<span id="Sec1wrapper" style="font-size:1.5em; text-align:center; display:block; margin-top:-45%; color:#fff; display:none; width:100%; float:right;">
+			<img src="/images/golden-icon.png" style="width:2.5em; height:auto;"><br />
+			Item 4
+		</span>
+	</span>
+	
+  </div>
+
+<span style="font-weight:200; font-size:0.9em; display:block; text-align:center; padding:2em;">สงวนลิขสิทธิ์ บริษัท รูปภาพ จำกัด</span>
+  </body>
+  <script>
+	$(document).ready(function(){
+	
+		$("#header-wrapper").load("/include/header-bar.html");
+
+		var timer;
+		$("#Sec3Home").mouseenter(function(){
+			timer = setTimeout(function(){
+				$("#Sec3Home" ).animate({'width': '70%'}, 1000);
+				$( "#Sec1Home" ).animate({'width': '30%'}, 1000); 
+				$("#Sec3wrapper, #darklayerSec3").fadeIn();
+			},500/* <--- the delay */)
+		}).mouseleave(function(){
+			clearTimeout(timer);
+			$("#Sec3Home").animate({'width': '50%'}, 1000);
+			$( "#Sec1Home" ).animate({'width': '50%'}, 1000); 
+			$("#Sec3wrapper, #darklayerSec3").fadeOut();
+		});
+		
+		$("#Sec1Home").mouseenter(function(){
+			timer = setTimeout(function(){
+				$("#Sec1wrapper, #darklayerSec1").fadeIn();
+			},500/* <--- the delay */)
+		}).mouseleave(function(){
+				clearTimeout(timer);
+				$("#Sec1wrapper, #darklayerSec1").fadeOut();
+		});
+
+	  
+	  
+		
+	})
+</script>
+</html>
