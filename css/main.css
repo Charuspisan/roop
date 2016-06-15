@@ -24,7 +24,24 @@ a:hover, a:hover span {color:#f5aa03 !important;}
 
 .home-items {display:inline-block; width:50%; height:100%; background:url('/images/welcome-bg.jpg'); background-size: cover; background-position: center;}
 
-
+.ug-tile .ug-textpanel-title { font-weight: 300;}
+.ug-thumb-wrapper.ug-tile .ug-tile-icon {
+    width: 32px;
+    height: 38px;
+    background-repeat: no-repeat;
+	background-position: 0px;
+    background-size: 100% 100%;
+    z-index: 6;
+    top: 1px;
+    left: 1px;
+    cursor: pointer;
+}
+.ug-thumb-wrapper.ug-tile .ug-tile-icon.ug-icon-zoom, .ug-thumb-wrapper.ug-tile .ug-tile-icon.ug-icon-zoom:hover {
+    background-image: url('/images/golden-icon.png');
+}
+.ug-thumb-wrapper.ug-tile .ug-tile-icon:hover {
+    background-position: 0px;
+}
 
 
 

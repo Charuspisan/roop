@@ -1,0 +1,102 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<link href='https://fonts.googleapis.com/css?family=Kanit:400,200,200italic,300,300italic,500&subset=latin,thai,latin-ext' rel='stylesheet' type='text/css'>
+<link rel='stylesheet' href='/unitegallery/css/unite-gallery.css' type='text/css' /> 
+<link href='/css/main.css' rel='stylesheet' type='text/css'>
+<link href='/css/animation.css' rel='stylesheet' type='text/css'>
+<script src="/js/jquery-3.0.0.min.js"></script>
+<!-- gellery -->
+<script type='text/javascript' src='/unitegallery/js/unitegallery.min.js'></script> 
+<script type='text/javascript' src='/unitegallery/themes/tiles/ug-theme-tiles.js'></script> 
+		
+</head>
+  <body>
+	<div class="page-wrapper" style="width:100%;">
+	  
+		  <div id="header-wrapper"></div>
+		  <div class="clear"></div>
+		  <span class="pagenav" style="display:inline-block; float:right; margin-top: -2.5em; font-weight: 200; font-style: italic; padding-right:2em; clear:both;">Now you are here : <a href="home.html">Home</a> > Gallery 1</span>
+
+	</div>
+	<div id="gallery" style="display:none;">
+
+		<img alt="Image 1 Title" src="/images/welcome-bg.jpg"
+			data-image="/images/welcome-bg.jpg"
+			data-description="Image 1 Description">
+		
+		<img alt="Image 2 Title" src="/images/welcome-bg.jpg"
+			data-image="/images/welcome-bg.jpg"
+			data-description="Image 2 Description">
+		
+		<img alt="Image 1 Title" src="/images/welcome-bg.jpg"
+			data-image="/images/welcome-bg.jpg"
+			data-description="Image 1 Description">
+		
+		<img alt="Image 2 Title" src="/images/welcome-bg.jpg"
+			data-image="/images/welcome-bg.jpg"
+			data-description="Image 2 Description">
+			
+		<img alt="Image 1 Title" src="/images/welcome-bg.jpg"
+			data-image="/images/welcome-bg.jpg"
+			data-description="Image 1 Description">
+		
+		<img alt="Image 2 Title" src="/images/welcome-bg.jpg"
+			data-image="/images/welcome-bg.jpg"
+			data-description="Image 2 Description">
+			
+		<img alt="Image 1 Title" src="/images/welcome-bg.jpg"
+			data-image="/images/welcome-bg.jpg"
+			data-description="Image 1 Description">
+		
+		<img alt="Image 2 Title" src="/images/welcome-bg.jpg"
+			data-image="/images/welcome-bg.jpg"
+			data-description="Image 2 Description">
+		
+		<img alt="Image 1 Title" src="/images/welcome-bg.jpg"
+			data-image="/images/welcome-bg.jpg"
+			data-description="Image 1 Description">
+		
+		<img alt="Image 2 Title" src="/images/welcome-bg.jpg"
+			data-image="/images/welcome-bg.jpg"
+			data-description="Image 2 Description">
+			
+		<img alt="Image 1 Title" src="/images/welcome-bg.jpg"
+			data-image="/images/welcome-bg.jpg"
+			data-description="Image 1 Description">
+		
+		<img alt="Image 2 Title" src="/images/welcome-bg.jpg"
+			data-image="/images/welcome-bg.jpg"
+			data-description="Image 2 Description">
+
+	</div>
+  
+  <style>
+
+  </style>
+  
+  
+	
+  </div>
+
+<span style="font-weight:200; font-size:0.9em; display:block; text-align:center; padding:2em;">สงวนลิขสิทธิ์ บริษัท รูปภาพ จำกัด</span>
+  </body>
+  <script>
+	$(document).ready(function(){
+	
+		$("#header-wrapper").load("/include/header-bar.html");
+		
+		jQuery("#gallery").unitegallery({
+			tile_enable_textpanel:true,
+			tile_textpanel_title_text_align: "center",
+			tiles_type: "justified",
+			tiles_justified_space_between:0,
+		});
+	
+	})
+</script>
+</html>
