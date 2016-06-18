@@ -11,46 +11,44 @@
 <script src="/js/jquery-3.0.0.min.js"></script>
 </head>
   <body>
-  <div class="page-wrapper" style="width:100%;">
+    <style>
+	#Sec3Home {background-image:url('/images/welcome-bg.jpg'); position: absolute; left:0; background-size: cover; background-position: center;}
+	#Sec3Home div span {display:inline-block; width:25%; height:45%; background-color:#000; color:#fff; margin:0.5em;}
+	#Sec1Home {background-image:url('/images/welcome-bg.jpg'); position: absolute; right:0; color:#fff; background-size: cover; background-position: center;}
+	.dark-layer {background-color:rgba(0,0,0,0.5); width:100%; height:100%; top:0; display:none;}
+  </style>
+  
+  <div class="page-wrapper" style="width:100%; max-width:1220px; margin:0 auto;">
   
 	  <div id="header-wrapper"></div>
 	  <div class="clear"></div>
 	  <span class="pagenav" style="display:inline-block; float:right; margin-top: -2.5em; font-weight: 200; font-style: italic; padding-right:2em; clear:both;">Now you are here : Home</span>
 
-  </div>
-  
-  
-  <style>
-	#Sec3Home {background-image:url('/images/welcome-bg.jpg'); position: absolute; left:0;}
-	#Sec3Home div span {display:inline-block; width:25%; height:45%; background-color:#000; color:#fff; margin:0.5em;}
-	#Sec1Home {background-image:url('/images/welcome-bg.jpg'); position: absolute; right:0; color:#fff;}
-	.dark-layer {background-color:rgba(0,0,0,0.5); width:100%; height:100%; top:0; display:none;}
-  </style>
-  
-  
-  <div style="background-color:#000; position:relative; height:50vh; background-image: url('/images/bottom-corner.png'),url('/images/top-corner.png'); background-repeat: no-repeat; background-position: bottom left, top right;">
-  
-	<span id="Sec3Home" class="home-items">
-		<div id="darklayerSec3" class="dark-layer"></div>
-		<div id="Sec3wrapper" style="margin-top:-40vh; text-align:center; display:none; z-index:2;">
-			<a><span>Item 1</span></a>
-			<a><span>Item 2</span></a>
-			<a><span>Item 3</span></a>
-		</div>
-	</span>
-	<span id="Sec1Home" class="home-items">
-		<div id="darklayerSec1" class="dark-layer"></div>
-		<span id="Sec1wrapper" style="font-size:1.5em; text-align:center; display:block; margin-top:-30vh; color:#fff; display:none; width:100%; float:right;">
-			<a>
-				<img src="/images/golden-icon.png" style="width:2.5em; height:auto;"><br />
-				Item 4
-			</a>	
-		</span>
-	</span>
-	
-  </div>
+		  <div style="background-color:#000; position:relative; height:50vh; background-image: url('/images/bottom-corner.png'),url('/images/top-corner.png'); background-repeat: no-repeat; background-position: bottom left, top right;">
+		  
+			<span id="Sec1Home" class="home-items">
+				<div id="darklayerSec1" class="dark-layer"></div>
+				<span id="Sec1wrapper" style="font-size:1.5em; text-align:center; display:block; margin-top:-30vh; color:#fff; display:none; width:100%; float:right;">
+					<a>
+						<img src="/images/golden-icon.png" style="width:2.5em; height:auto;"><br />
+						Item 4
+					</a>	
+				</span>
+			</span>
+			<span id="Sec3Home" class="home-items">
+				<div id="darklayerSec3" class="dark-layer"></div>
+				<div id="Sec3wrapper" style="margin-top:-40vh; text-align:center; display:none; z-index:2;">
+					<a href="gallery-index-1.html"><span>Item 1</span></a>
+					<a><span>Item 2</span></a>
+					<a><span>Item 3</span></a>
+				</div>
+			</span>
+			
+		  </div>
 
-<span style="font-weight:200; font-size:0.9em; display:block; text-align:center; padding:2em;">สงวนลิขสิทธิ์ บริษัท รูปภาพ จำกัด</span>
+		<span style="font-weight:200; font-size:0.9em; display:block; text-align:center; padding:2em;">สงวนลิขสิทธิ์ บริษัท รูปภาพ จำกัด</span>
+
+  </div>
   </body>
   <script>
 	$(document).ready(function(){

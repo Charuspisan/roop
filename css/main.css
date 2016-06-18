@@ -22,7 +22,7 @@ a:hover, a:hover span {color:#f5aa03 !important;}
 .fb-icon {width:20px; height:20px; background:url("/images/fb-inact.png"); margin: 1.5em 0 0 1em !important;}
 .fb-icon:hover {background:url("/images/fb-act.png");}
 
-.home-items {display:inline-block; width:50%; height:100%; background:url('/images/welcome-bg.jpg'); background-size: cover; background-position: center;}
+.home-items {display:inline-block; width:50%; height:100%;}
 
 .ug-tile .ug-textpanel-title { font-weight: 300;}
 .ug-thumb-wrapper.ug-tile .ug-tile-icon {
@@ -42,10 +42,34 @@ a:hover, a:hover span {color:#f5aa03 !important;}
 .ug-thumb-wrapper.ug-tile .ug-tile-icon:hover {
     background-position: 0px;
 }
-
-
-
-
+.ug-thumb-wrapper.ug-tile img.ug-thumb-image {
+    -webkit-filter: grayscale(30%);
+    filter: grayscale(30%);
+}
+.ug-thumb-wrapper.ug-tile img.ug-thumb-image:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+/* .ug-thumb-wrapper .ug-thumb-overlay {display:none !important;}*/ 
+.ug-item-wrapper img {width:80% !important; height:auto !important; left:10% !important;} 
+.ug-lightbox-button-close {display:none !important;}
+.ug-lightbox .ug-lightbox-arrow-left, .ug-lightbox .ug-lightbox-arrow-right {
+    position: absolute;
+    width: 50px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-image: url('/images/lightbox-arrow-left.png');
+    background-position: 0px 0px;
+	background-size: contain;
+    z-index: 3;
+    cursor: pointer;
+}
+.ug-lightbox .ug-lightbox-arrow-right {
+    background-image: url('/images/lightbox-arrow-right.png');
+}
+.ug-lightbox .ug-lightbox-arrow-left.ug-arrow-hover, .ug-lightbox .ug-lightbox-arrow-right.ug-arrow-hover {
+    background-position: 0px 0px !important;
+}
 
 
 
